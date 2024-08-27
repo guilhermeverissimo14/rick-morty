@@ -10,7 +10,27 @@
   border-top-left-radius: 20px;
 }
 
+.text-name-character {
+  padding-left: 10px;
+  margin: 0;
+  font-size: 24px !important;
+  font-family: 'Creepster';
+  color: #FAFAFA;
+  font-weight: 700;
+}
+
+.text-species-character {
+  padding: 10px;
+  font-size: 16px !important;
+  font-family: 'Poppins';
+  color: #A4A4A4;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .btn-favorite {
+  background-color: transparent;
+  border: transparent;
   top: 0;
   position: absolute;
   right: 3px;

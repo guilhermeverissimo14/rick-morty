@@ -17,3 +17,32 @@ body {
   justify-content: space-around;
   margin-top: 3em;
 }
+
+//responsividade dos cards
+
+@media (max-width: 1020px) {
+  .content-character-card {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .content-character-card {
+    grid-template-columns: auto;
+  }
+}
+
+.content-search {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+.content-search h1 {
+  margin: 0;
+  font-family: "Creepster";
+  font-size: 48px;
+  color: #00B5CC;
+  -webkit-text-stroke: 2px #B2DF28;
+}
