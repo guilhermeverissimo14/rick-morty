@@ -1,12 +1,2 @@
+<app-header></app-header>
 <router-outlet></router-outlet>
-<div *ngFor="let character of favorites$ | async" class="favorites-list">
-  <h3>{{ character }}</h3>
-</div>
-<span>Favorites: {{ favoritesCount$ | async }}</span>
-
-<div *ngFor="let characte of character " class="character-card">
-  <img [src]="characte.image" alt="{{ characte.name }}" />
-  <h3>{{ characte.name }}</h3>
-  <p>{{ characte.species }}</p>
-  <button (click)="addToFavorites()">Add to Favorites</button>
-</div>
