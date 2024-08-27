@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faHeart, faHome } from '@fortawesome/free-solid-svg-icons';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
@@ -10,6 +11,9 @@ import { selectFavoritesCount } from 'src/app/store/selectors/favorites.selector
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  faHome = faHome;
+  faHeart = faHeart;
 
   favoritesCount$: Observable<number>;
 

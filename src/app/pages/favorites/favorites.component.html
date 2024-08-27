@@ -2,11 +2,9 @@
   <div class="content-search">
     <h1>Favoritos</h1>
   </div>
-  <div class="content-character-card">
-    <app-character-card *ngFor="let character of favorites$ | async" [character]="character"></app-character-card>
-  </div>
 
-  <div *ngIf="(favorites$ | async)?.length; else notCharacters" class="content-character-card">
+  <div class="content-character-card" *ngIf="(favorites$ | async)?.length; else notCharacters"
+    class="content-character-card">
     <app-character-card *ngFor="let character of favorites$ | async" [character]="character"></app-character-card>
   </div>
 

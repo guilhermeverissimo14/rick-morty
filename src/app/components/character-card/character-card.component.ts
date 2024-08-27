@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
 import { Store } from '@ngrx/store';
 
 import { Character } from 'src/app/models/character.model';
@@ -13,6 +15,10 @@ import { isFavorite } from 'src/app/store/selectors/favorites.selectors';
 export class CharacterCardComponent implements OnInit {
 
   isFavorited: Boolean = false;
+
+  faHeart = faHeart;
+
+  faHeartRegular = faHeartRegular
 
   constructor(private store: Store) { }
 

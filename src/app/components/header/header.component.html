@@ -3,12 +3,12 @@
   <div class="box-header">
 
     <button routerLink="/" class="text-start-header">
-      <mat-icon>home</mat-icon>
+      <fa-icon class="icon-home-header" [icon]="faHome"></fa-icon>
       Início
     </button>
 
     <button routerLink="/favorites" class="box-count-favorites">
-      <mat-icon>favorite</mat-icon>
+      <fa-icon class="icon-favorite-header" [icon]="faHeart"></fa-icon>
       <span class="text-favorites">Favoritos</span>
       <span class="text-count-favorites">{{favoritesCount$ | async}}</span>
     </button>

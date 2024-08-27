@@ -3,6 +3,6 @@
   <h1 class="text-name-character">{{ character.name }}</h1>
   <h5 class="text-species-character">{{ character.species }}</h5>
   <button class="btn-favorite" (click)="isFavorited ? removeFavorites() : addToFavorites()">
-    <mat-icon>{{isFavorited ? "favorite" : ""}}</mat-icon>
+    <fa-icon class="icon-favorite-card" [icon]="isFavorited ? faHeart : faHeartRegular"></fa-icon>
   </button>
 </div>
