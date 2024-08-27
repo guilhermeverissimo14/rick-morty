@@ -1,0 +1,21 @@
+.content-favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-not-characters button {
+  font-family: "Poppins";
+  font-size: 14px;
+  background-color: #FFFFFF;
+  color: #0A0A0A;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.content-not-characters button:hover {
+  background-color: #a79999;
+}
