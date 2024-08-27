@@ -3,7 +3,6 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 import { Character } from 'src/app/models/character.model';
-import { CharacterService } from 'src/app/services/character.service';
 import { selectAllFavorites } from 'src/app/store/selectors/favorites.selectors';
 
 @Component({
@@ -16,7 +15,6 @@ export class FavoritesComponent {
 
   constructor(
     private store: Store,
-    private characterService: CharacterService
   ) {
     this.favorites$ = this.store.select(selectAllFavorites);
   }

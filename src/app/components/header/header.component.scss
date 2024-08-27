@@ -64,3 +64,10 @@
   font-weight: 600;
   font-size: 14px;
 }
+
+@media (max-width: 640px) {
+  .img-header {
+    width: 95px;
+    height: 50px;
+  }
+}

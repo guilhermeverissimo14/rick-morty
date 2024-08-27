@@ -18,6 +18,56 @@ body {
   margin-top: 3em;
 }
 
+.content-search {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+
+.content-search form {
+  margin-top: 18px;
+}
+
+.mat-form-field {
+  width: 350px;
+}
+
+.content-search h1 {
+  margin: 0;
+  font-family: "Creepster";
+  font-size: 48px;
+  color: #00B5CC;
+  -webkit-text-stroke: 2px #B2DF28;
+}
+
+.content-not-characters {
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A0A0A;
+  border-radius: 20px;
+}
+
+.content-not-characters h1 {
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #FAFAFA;
+  font-weight: 700;
+}
+
+.content-not-characters p {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #A4A4A4;
+  font-weight: 400;
+}
+
+
 //responsividade dos cards
 
 @media (max-width: 1020px) {
@@ -30,19 +80,12 @@ body {
   .content-character-card {
     grid-template-columns: auto;
   }
-}
 
-.content-search {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  margin-top: 3em;
-}
+  .mat-form-field {
+    width: 150px;
+  }
 
-.content-search h1 {
-  margin: 0;
-  font-family: "Creepster";
-  font-size: 48px;
-  color: #00B5CC;
-  -webkit-text-stroke: 2px #B2DF28;
+  .content-search h1 {
+    font-size: 38px;
+  }
 }

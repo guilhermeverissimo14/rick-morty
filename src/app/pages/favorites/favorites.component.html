@@ -4,3 +4,14 @@
 <div class="content-character-card">
   <app-character-card *ngFor="let character of favorites$ | async" [character]="character"></app-character-card>
 </div>
+
+<div *ngIf="favorites$ | async ; else notCharacters" class="content-character-card">
+  <app-character-card *ngFor="let character of favorites$ | async" [character]="character"></app-character-card>
+</div>
+
+<ng-template #notCharacters>
+  <div class="content-not-characters">
+    <h1>Nada foi encontrado</h1>
+    <p>Tente uma nova busca</p>
+  </div>
+</ng-template>

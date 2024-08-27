@@ -1,29 +1,44 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
+import { FormControl } from '@angular/forms';
+import { map, Observable, startWith } from 'rxjs';
 
 import { Character } from 'src/app/models/character.model';
 import { CharacterService } from 'src/app/services/character.service';
-import { selectAllFavorites } from 'src/app/store/selectors/favorites.selectors';
 
 @Component({
   selector: 'app-characters',
   templateUrl: './characters.component.html',
   styleUrls: ['./characters.component.scss']
 })
+
 export class CharactersComponent implements OnInit {
 
-  characters: Character[] | any;
+  characters: Character[] = [];
+
+  filteredCharacters: Observable<Character[]> | any;
+
+  myControl = new FormControl('');
 
   constructor(
     private characterService: CharacterService
   ) { }
 
   ngOnInit(): void {
-    this.characters = this.characterService.getAllCharacter()
-      .subscribe((data: any) => {
-        this.characters = data.results;
-      });
+
+    this.characterService.getAllCharacter().subscribe((data: any) => {
+      this.characters = data.results;
+      this.filteredCharacters = this.myControl.valueChanges.pipe(
+        startWith(''),
+        map(value => this._filter(value || ''))
+      );
+    });
+
+
+  }
+
+  private _filter(value: string): Character[] {
+    const filterValue = value.toLowerCase();
+    return this.characters.filter((character: Character) => character.name.toLowerCase().includes(filterValue));
   }
 
 }
