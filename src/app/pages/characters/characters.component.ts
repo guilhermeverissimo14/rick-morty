@@ -33,7 +33,6 @@ export class CharactersComponent implements OnInit {
       );
     });
 
-
   }
 
   private _filter(value: string): Character[] {

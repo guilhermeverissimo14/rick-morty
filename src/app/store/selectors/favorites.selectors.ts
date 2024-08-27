@@ -13,3 +13,8 @@ export const selectFavoritesCount = createSelector(
   selectFavoritesState,
   (state: FavoritesState) => state.favorites.length
 );
+
+export const isFavorite = createSelector(
+  selectAllFavorites,
+  (favorites: Character[], { characterId }: any) => favorites.some((fav) => fav.id === characterId)
+);

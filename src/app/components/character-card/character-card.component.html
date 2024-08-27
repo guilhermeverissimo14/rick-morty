@@ -2,7 +2,7 @@
   <img [src]="character.image" alt="{{ character.name }}" />
   <h1 class="text-name-character">{{ character.name }}</h1>
   <h5 class="text-species-character">{{ character.species }}</h5>
-  <button class="btn-favorite" (click)="isFavorite ? removeFavorites() : addToFavorites()">
-    <mat-icon>{{isFavorite ? "favorite" : ""}}</mat-icon>
+  <button class="btn-favorite" (click)="isFavorited ? removeFavorites() : addToFavorites()">
+    <mat-icon>{{isFavorited ? "favorite" : ""}}</mat-icon>
   </button>
 </div>
