@@ -2,7 +2,8 @@
   <img [src]="character.image" alt="{{ character.name }}" />
   <h1 class="text-name-character">{{ character.name }}</h1>
   <h5 class="text-species-character">{{ character.species }}</h5>
-  <button class="btn-favorite" (click)="isFavorited ? removeFavorites() : addToFavorites()">
+  <button matTooltip="Adicionar aos favoritos ❤" class="btn-favorite"
+    (click)="isFavorited ? removeFavorites() : addToFavorites()">
     <fa-icon class="icon-favorite-card" [icon]="isFavorited ? faHeart : faHeartRegular"></fa-icon>
   </button>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { faSearch, faSquareXmark } from '@fortawesome/free-solid-svg-icons';
 import { map, Observable, startWith } from 'rxjs';
 
 import { Character } from 'src/app/models/character.model';
@@ -12,6 +13,9 @@ import { CharacterService } from 'src/app/services/character.service';
 })
 
 export class CharactersComponent implements OnInit {
+
+  search = faSearch;
+  square = faSquareXmark
 
   characters: Character[] = [];
 
@@ -38,6 +42,10 @@ export class CharactersComponent implements OnInit {
   private _filter(value: string): Character[] {
     const filterValue = value.toLowerCase();
     return this.characters.filter((character: Character) => character.name.toLowerCase().includes(filterValue));
+  }
+
+  clearText() {
+    this.myControl.setValue('');
   }
 
 }
