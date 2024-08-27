@@ -1,12 +1,3 @@
-<div *ngFor="let character of favorites$ | async" class="favorites-list">
-  <h3>{{ character.name }}</h3>
-</div>
-<span>Favorites: {{ favoritesCount$ | async }}</span>
-
-<div *ngFor="let character of characters " class="character-card">
-  <img [src]="character.image" alt="{{ character.name }}" />
-  <h3>{{ character.name }}</h3>
-  <p>{{ character.species }}</p>
-  <button (click)="addToFavorites()">Add to Favorites</button>
-  <button (click)="removeFavorites()">Remove</button>
+<div class="content-character-card">
+  <app-character-card *ngFor="let character of characters" [character]="character"></app-character-card>
 </div>

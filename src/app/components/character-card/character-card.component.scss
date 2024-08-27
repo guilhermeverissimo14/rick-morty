@@ -1,0 +1,18 @@
+.character-card {
+  background-color: #0A0A0A;
+  margin: 1em;
+  border-radius: 15px;
+  position: relative;
+}
+
+.character-card img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.btn-favorite {
+  top: 0;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}

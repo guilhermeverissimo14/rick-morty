@@ -10,7 +10,7 @@
     <button routerLink="/favorites" class="box-count-favorites">
       <mat-icon>favorite</mat-icon>
       <span class="text-favorites">Favoritos</span>
-      <span class="text-count-favorites">0</span>
+      <span class="text-count-favorites">{{favoritesCount$ | async}}</span>
     </button>
   </div>
 </mat-toolbar>
