@@ -2,7 +2,11 @@
 
 ![Captura de tela 2024-08-27 220745](https://github.com/user-attachments/assets/1dc6cda3-f305-49a7-ac52-1e75c0dbe65c)
 
-# RickMorty
+## 🔥 Introdução
+
+Consumindo a Api publica do Rick Morty, onde no projeto tem a opção de favoritar personagens.
+
+# RickMorty 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
 
