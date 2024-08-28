@@ -3,7 +3,7 @@
 
 ## 🔗 Link da aplicação
 
-[Acesse a aplicação aqui](https://ngrx.io/guide/store](https://rick-morty-psi-plum.vercel.app/))
+[Acesse a aplicação aqui](https://rick-morty-psi-plum.vercel.app/)
 
 ## 🔥 Introdução
 
