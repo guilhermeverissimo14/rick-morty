@@ -3,7 +3,7 @@
 
 ## 🔗 Link da aplicação
 
-*[Rick Morty]([https://ngrx.io/guide/store](https://rick-morty-psi-plum.vercel.app/))
+[Acesse a aplicação aqui](https://ngrx.io/guide/store](https://rick-morty-psi-plum.vercel.app/))
 
 ## 🔥 Introdução
 
@@ -47,8 +47,12 @@ ng serve.
 ## 📦 Tecnologias usadas:
 
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-*[NgRx](https://ngrx.io/guide/store)
+
+[NgRx](https://ngrx.io/guide/store)
 
